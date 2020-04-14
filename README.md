@@ -1,10 +1,3 @@
-<!-- ・ユーザー管理機能
-   user_table
-・チャットグループ管理機能
-   group_table
-・チャットメッセージの保存機能
-  massage_table -->
-
 ## users_table
 
 |Column|Type|Option|
@@ -16,7 +9,8 @@
 
 ### Association
 - has_many:massages
-- has_many:groups_users_table
+- has_many:groups_users
+- has_many :groups, through: :users_groups
 
 ## group_table
 |Column|Type|Option|
@@ -24,8 +18,9 @@
 |name--|string|----|
 
 ### Association
-- has_many :message
-- has_many :users_groups_table
+- has_many :messages
+- has_many :groups_users
+- has_many :users, through: :groups_users
 
 ## message_table
 |Column|Type|Option|
@@ -36,7 +31,7 @@
 
 ### Association
 - belongs_to :group
-- belongs_to :user
+- belongs_to :users
 
 ## groups_usersテーブル
 
