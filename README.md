@@ -10,7 +10,7 @@
 ### Association
 - has_many:massages
 - has_many:groups_users
-- has_many :groups, through: :users_groups
+- has_many :groups, through: :groups_users
 
 ## group_table
 |Column|Type|Option|
