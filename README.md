@@ -31,8 +31,8 @@
 |group_id|references|null: false,foreign_key:true|
 
 ### Association
-- belong_to :group
-- belong_to :users
+- belongs_to :group
+- belongs_to :user
 
 ## groups_usersテーブル
 
