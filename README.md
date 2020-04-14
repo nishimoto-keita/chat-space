@@ -43,4 +43,4 @@
 
 ### Association
 - belong_to :group
-- belong_to :users
+- belong_to :user
