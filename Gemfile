@@ -58,9 +58,22 @@ gem 'devise'
 
 gem 'haml-rails'
 
-gem "font-awesome-rails"
 
+<<<<<<< Updated upstream
 gem 'font-awesome-sass'
 
 gem 'pry-rails'
+>>>>>>> Stashed changes
+=======
+
+<<<<<<< HEAD
+gem 'font-awesome-sass'
+=======
+gem 'font-awesome-sass'
+
+gem 'pry-rails'
+
+gem 'carrierwave'
+gem 'mini_magick'
+>>>>>>> parent of 4536412... Revert "メッセージ送信機能の実装"
 >>>>>>> Stashed changes

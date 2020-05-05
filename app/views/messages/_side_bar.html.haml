@@ -1,5 +1,6 @@
 .side-bar
   .side-bar__user-name
+<<<<<<< HEAD
     .top-items
 <<<<<<< Updated upstream
       .top-items__name 
@@ -24,6 +25,7 @@
       %p.group__group-list
         ああ
 =======
+<<<<<<< Updated upstream
       = current_user.name
     .top-items__name         
       %ul.top-items__icons  
@@ -41,4 +43,25 @@
           .group__name
             = group.name
           .group__message
+>>>>>>> Stashed changes
+=======
+    .side-bar__header
+      .top-items
+        = current_user.name
+      .top-items__name         
+        %ul.top-items__icons  
+          %li.top-items__icons--new-grop
+            = link_to new_group_path do
+              = icon('far', 'edit')
+          %li.top-items__icons--edit-user
+            = link_to edit_user_path(current_user) do
+              = icon('fas', 'cog')
+  .side-bar__groups-list
+    - current_user.groups.each do |group|
+      .group
+        = link_to group_messages_path (group) do
+          .group__name
+            = group.name
+          .group__message
+>>>>>>> parent of 4536412... Revert "メッセージ送信機能の実装"
 >>>>>>> Stashed changes
