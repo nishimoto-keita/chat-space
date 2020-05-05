@@ -41,8 +41,9 @@
   }
 }
 
-
 .group {
+  height: 65px;
+  width: 260px;
   font-weight: bolder;
   margin-bottom: 40px;
   &__name {
@@ -59,10 +60,3 @@
   }
 }
 
-.group__message {
-  color: white;
-}
-
-a {
-  text-decoration: none;
-}
