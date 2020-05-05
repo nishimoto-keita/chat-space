@@ -2,19 +2,23 @@
   .side-bar__user-name
     .top-items
       = current_user.name
-    .top-items__name         
+      .top-items__name 
+        
       %ul.top-items__icons  
-        %li.top-items__icons--new-grop
-          = link_to new_group_path do
-            = fa_icon ('edit')
-            .befor
         %li.top-items__icons--edit-user
+          =link_to "#"  do
+            = fa_icon 'edit'
+            .befor
+        %li.top-items__icons--new-grop
           = link_to edit_user_path(current_user) do
-            = fa_icon ('cog')
-  .side-bar__groups-list
-    - current_user.groups.each do |group|
-      .group
-        = link_to '#' do
-          .group__name
-            = group.name
-          .group__message
+            = fa_icon 'cog'
+
+
+
+
+  .groups
+    = link_to "#", class:"group" do
+      %p.group__group-name
+        ああ
+      %p.group__group-list
+        ああ
