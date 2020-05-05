@@ -1,6 +1,14 @@
 @import "reset";
+@import "config/colors";
 @import "modules/messages";
 @import "font-awesome-sprockets";
-@import "font-awesome";
+@import 'font-awesome';
 @import "modules/side_bar";
 @import "modules/chat";
+@import "modules/user";
+<<<<<<< HEAD
+@import "modules/flash.scss"
+=======
+@import "modules/flash.scss";
+@import "modules/group";
+>>>>>>> parent of e782ac9... Revert "Messageモデル作成・ルーティング設定"

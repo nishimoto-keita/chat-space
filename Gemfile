@@ -51,3 +51,20 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+
+gem 'devise'
+
+gem 'haml-rails'
+
+
+
+<<<<<<< HEAD
+gem 'font-awesome-sass'
+=======
+gem 'font-awesome-sass'
+
+gem 'pry-rails'
+
+gem 'carrierwave'
+gem 'mini_magick'
+>>>>>>> parent of 4536412... Revert "メッセージ送信機能の実装"
