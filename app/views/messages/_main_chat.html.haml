@@ -9,7 +9,34 @@
       = link_to "Edit", '#'
 
   .messages
-    = render @messages
+    .message
+      .upper-message
+        .upper-message__user-name
+          masa
+        .upper-message__date
+          2017/04/04
+      .lower-meesage
+        .lower-message__content
+          おはよう
+    .message
+      .upper-message
+        .upper-message__user-name
+          masa
+        .upper-message__date
+          2017/04/04
+      .lower-meesage
+        .lower-message__content
+          おはよう
+    .message
+      .upper-message
+        .upper-message__user-name
+          masa
+        .upper-message__date
+          2017/04/04
+      .lower-meesage
+        .lower-message__content
+          おはよう
+
 
   .form
     = form_for [@group, @message] do |f|
