@@ -43,6 +43,7 @@
 
 
 .group {
+  font-weight: bolder;
   margin-bottom: 40px;
   &__name {
     color: #ffffff;
@@ -60,7 +61,6 @@
 
 .group__message {
   color: white;
-  font-size: 11px;
 }
 
 a {
