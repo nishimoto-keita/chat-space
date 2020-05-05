@@ -1,6 +1,6 @@
 .chat-main
-  .chat-main__group-info
-    .chat-main__left-box
+  .main-header
+    .main-header__left-box
       %h2.chat-main__left-box__group
         test
       %ul.chat-main__left-box__member
@@ -37,7 +37,9 @@
         .lower-message__content
           おはよう
 
+
   .form
+<<<<<<< HEAD
     %form.new_message
       .input-box
         %input{type:"text", class: "input-box__text", placeholder: "type a message　"}
@@ -45,3 +47,12 @@
           = fa_icon 'image'
           %input{type: "file", class: "input-box__image__file"}
       %input{type: "submit", class: "submit-btn"}
+=======
+    = form_for [@group, @message] do |f|
+      = f.text_field :content, class: 'form__message', placeholder: 'type a message'
+      .form__mask
+        = f.label :image, class: 'form__mask__image' do
+          = icon('fas', 'image')
+          = f.file_field :image, class: 'hidden'
+      = f.submit 'Send', class: 'form__submit'
+>>>>>>> parent of 4536412... Revert "メッセージ送信機能の実装"

@@ -8,6 +8,7 @@
     display: flex;
     align-items: center;
     padding: 0 20px; 
+<<<<<<< HEAD
   } 
 }
 
@@ -17,19 +18,67 @@
   background-color: #2f3e51;
   display: flex;
   padding: 20px 0px 0px 20px;
+=======
+    .side-bar__header {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      font-weight: bold;
+    }
+  }
+  li {
+    font-size: 16px;
+    margin-left: 5px;
+  }
+    .top-items {
+      font-size: 16px;
+      color: white;
+      &__name {
+        color: white;
+        border-width:0;
+        .top-items__icons {
+          display: flex;
+        }
+        a {
+          color: white;
+      }
+    }
+  }
+  &__groups-list {
+    height: calc(100vh - 100px);
+    width: 300px;
+    background-color: #2f3e51;
+    padding: 20px 0px 0px 20px;
+  }
+>>>>>>> parent of 4536412... Revert "メッセージ送信機能の実装"
 }
 
 .group {
   height: 65px;
   width: 260px;
   font-weight: bolder;
+<<<<<<< HEAD
 margin-bottom: 40px;
   &__group-name {
+=======
+  margin-bottom: 40px;
+  &__name {
+>>>>>>> parent of e782ac9... Revert "Messageモデル作成・ルーティング設定"
     color: #ffffff;
     font-size: 15px;
     display : flex;
     margin-bottom: 5px;
+<<<<<<< HEAD
+=======
+    &__list {
+      color: #ffffff;
+      font-size: 11px;
+      width: 300px;
+      display: flex;
+    }
+>>>>>>> parent of e782ac9... Revert "Messageモデル作成・ルーティング設定"
   }
+<<<<<<< HEAD
   &__group-list {
     color: #ffffff;
     font-size: 11px;
@@ -37,3 +86,7 @@ margin-bottom: 40px;
     display: flex;
   }
 }
+=======
+}
+
+>>>>>>> parent of 4536412... Revert "メッセージ送信機能の実装"
