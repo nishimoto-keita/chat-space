@@ -1,58 +1,25 @@
 .chat-main
   .main-header
     .main-header__left-box
-      %h2.chat-main__left-box__group
-        test
-      %ul.chat-main__left-box__member
-        masa
+      %h2= @group.name
+      .main-header__left-box__member-list
+        Member：
+        %ul 
+        .main-header__left-box__list-member
+        - @group.users.each do |user|
+          %li= user.name
+        
     .chat-main__edit-btn
-      = link_to "Edit", '#'
+      = link_to "Edit", edit_group_path(params[:group_id]), method: :get
 
   .messages
-    .message
-      .upper-message
-        .upper-message__user-name
-          masa
-        .upper-message__date
-          2017/04/04
-      .lower-meesage
-        .lower-message__content
-          おはよう
-    .message
-      .upper-message
-        .upper-message__user-name
-          masa
-        .upper-message__date
-          2017/04/04
-      .lower-meesage
-        .lower-message__content
-          おはよう
-    .message
-      .upper-message
-        .upper-message__user-name
-          masa
-        .upper-message__date
-          2017/04/04
-      .lower-meesage
-        .lower-message__content
-          おはよう
-
+    = render @messages
 
   .form
-<<<<<<< HEAD
-    %form.new_message
-      .input-box
-        %input{type:"text", class: "input-box__text", placeholder: "type a message　"}
-        %label{class: "input-box__image"}
-          = fa_icon 'image'
-          %input{type: "file", class: "input-box__image__file"}
-      %input{type: "submit", class: "submit-btn"}
-=======
     = form_for [@group, @message] do |f|
       = f.text_field :content, class: 'form__message', placeholder: 'type a message'
       .form__mask
         = f.label :image, class: 'form__mask__image' do
-          = icon('fas', 'image')
+          = icon('fas', 'image', class: 'icon')
           = f.file_field :image, class: 'hidden'
       = f.submit 'Send', class: 'form__submit'
->>>>>>> parent of 4536412... Revert "メッセージ送信機能の実装"
