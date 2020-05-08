@@ -56,15 +56,9 @@ gem 'devise'
 
 gem 'haml-rails'
 
-
-
-<<<<<<< HEAD
-gem 'font-awesome-sass'
-=======
 gem 'font-awesome-sass'
 
 gem 'pry-rails'
 
 gem 'carrierwave'
 gem 'mini_magick'
->>>>>>> parent of 4536412... Revert "メッセージ送信機能の実装"
