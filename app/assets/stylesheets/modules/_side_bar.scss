@@ -45,6 +45,12 @@
   height: 65px;
   width: 260px;
   margin-bottom: 40px;
+  &__name {
+    font-size: 15px;
+  }
+  &__message {
+    font-size: 12px;
+  }
   a {
     color: white;
     text-decoration: none;
